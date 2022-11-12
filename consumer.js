@@ -2,7 +2,7 @@ module.exports = function(io) {
 	io.on('connection', function(socket) {
 		console.log('A user connected');
 
-		socket.broadcast.emit('hi');
+		socket.broadcast.emit('hallo there');
 		
 		socket.on('chat message', function(msg) {
 			console.log('message:', msg);
